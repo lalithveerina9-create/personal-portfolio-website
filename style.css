@@ -1,0 +1,263 @@
+
+body {
+    background-color: beige;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 10%;
+}
+
+.home-content {
+    flex: 1;
+}
+
+#home h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: normal;
+    font-weight: 700;
+}
+
+#home h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#home p {
+    color: black;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                 'Lucida Grande', 'Lucida Sans Unicode',
+                 Geneva, Verdana, sans-serif;
+}
+
+#home a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+#home a:hover {
+    background-color: green;
+}
+
+.home-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* About Section */
+
+#about {
+    display: grid;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: black;
+    padding: 50px;
+    margin: 30px;
+}
+
+#about h2 {
+    background-color: bisque;
+    font-style: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+/* About Cards */
+
+.about-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: lightblue;
+    flex: 1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: yellow;
+}
+
+
+/* Skills Section */
+
+.skill-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    flex: 1;
+    padding: 25px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background-color: yellow;
+}
+
+
+/* Projects Section */
+
+#projects {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background-color: yellow;
+    transform: translateY(-5px);
+}
+
+.project-card a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+/* Contact Section */
+
+#contact {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: green;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-cards {
+        flex-direction: column;
+    }
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+}
